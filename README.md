@@ -16,7 +16,11 @@ You will need the following R packages installed to run TLHLASSO:
 - DT
 
 ## Using 2LHLASSO
-
+In this model, GS was treated as the targeted quantitative trait to be predicted, and the DNA methylation profiles were employed as the instrumental variables. 
+- In step 1, the methylomic data were used to estimate the expected (or predicted) expression profiles for the mRNAs in layer 1 (Table S1). 
+- In step 2, we again used the methylomic data to estimate the expected expression levels for miRNAs, in accordance with the fact that methylation also regulates the abundance of miRNAs. 
+- In step 3, for the mRNAs in layer 2 which initially had lower methylome-based predictabilities, we recalculated their expected expression values in step 3 with improved predictabilities by using both methylomic data and the predicted abundance of miRNAs. This was based on the knowledge that both methylation and miRNAs can modulate genomic transcription. 
+- In step 4, we applied the LASSO model with cross-validation to rescreen mRNAs in both layers based on their expected values and used these fine-tuned mRNA profiles in the final model for the prediction of GS. 
 ## Running 2LHLASSO
 
 
