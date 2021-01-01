@@ -4,7 +4,7 @@ The last version is here: [LINK](https://github.com/YULEITSINGTAO/TLHLASSO)
 
 ## Introduction 
 Two-layer hierarchical LASSO (2LHLASSO) instrumental variable methodology to integrate multi-omics predictor variables based on the flow of genetic information in the central dogma. Now we mainly apply the 2LHLASSO model on prostate cancer cohort to make the prediction of prostate cancer outcome. The Gleason score (GS), considered the most relevant clinical indicator for biochemical relapse-free survival (BRFS), was treated as the target outcome trait to be predicted, and the DNA methylation profiles were employed as the instrumental variables to estimate the expected transcription profiles. The analysis of the TCGA prostate cancer dataset showed that the new method of 2LHLASSO had higher predictability for outcome traits when compared to the linear model that simply combined multi-omics variables. 
-![image info](./workflow_2.jpg)
+
 ## Installation 
 ```r
 remotes::install_github("YULEITSINGTAO/TLHLASSO")
@@ -16,6 +16,9 @@ You will need the following R packages installed to run TLHLASSO:
 - DT
 
 ## Using TLHLASSO
+Workflow of TLHLASSO
+![image info](./workflow_2.jpg)
+
 In this model, GS was treated as the targeted quantitative trait to be predicted, and the DNA methylation profiles were employed as the instrumental variables. 
 - In step 1, the methylomic data were used to estimate the expected (or predicted) expression profiles for the mRNAs in layer 1. 
 - In step 2, we again used the methylomic data to estimate the expected expression levels for miRNAs, in accordance with the fact that methylation also regulates the abundance of miRNAs. 
