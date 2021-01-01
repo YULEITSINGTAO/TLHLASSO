@@ -1,4 +1,4 @@
-# Two-layer hierarchical LASSO (2LHLASSO) model 
+# Two-layer hierarchical LASSO (TLHLASSO) model 
 
 The last version is here: [LINK](https://github.com/YULEITSINGTAO/TLHLASSO)
 
@@ -9,7 +9,11 @@ Two-layer hierarchical LASSO (2LHLASSO) instrumental variable methodology to int
 ```r
 remotes::install_github("YULEITSINGTAO/TLHLASSO")
 ```
-### Requirements 
+You will need the following R packages installed to run TLHLASSO:
+- dplyr
+- tidyr
+- glmnet
+- DT
 
 ## Using 2LHLASSO
 
