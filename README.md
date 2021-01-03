@@ -25,6 +25,11 @@ In this model, GS was treated as the targeted quantitative trait to be predicted
 - In step 3, for the mRNAs in layer 2 which initially had lower methylome-based predictabilities, we recalculated their expected expression values in step 3 with improved predictabilities by using both methylomic data and the predicted abundance of miRNAs. This was based on the knowledge that both methylation and miRNAs can modulate genomic transcription. 
 - In step 4, we applied the LASSO model with cross-validation to rescreen mRNAs in both layers based on their expected values and used these fine-tuned mRNA profiles in the final model for the prediction of GS. 
 
+## R file descriptions
+- R_square.R
+- cross_lasso.R
+- load_data_and_divide_group.R
+
 ## Running TLHLASSO
 The example of TLHLASSO model is in file main.R. Please run line by line to get the results.
 
