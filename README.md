@@ -31,9 +31,9 @@ In this model, GS was treated as the targeted quantitative trait to be predicted
 - In step 4, we applied the LASSO model with cross-validation to rescreen mRNAs in both layers based on their expected values and used these fine-tuned mRNA profiles in the final model for the prediction of GS. 
 
 ## R file descriptions
-- R_square.R
-- cross_lasso.R
-- load_data_and_divide_group.R
+- R_square.R: The function to calculate predictability.
+- cross_lasso.R: The function to conduct the cross validation LASSO regression and predict the response variable.
+- load_data_and_divide_group.R: The script to load the example dataset and generate the group for cross validation.
 
 ## Running TLHLASSO
 The example of TLHLASSO model is in file main.R. Please run line by line to get the results.
